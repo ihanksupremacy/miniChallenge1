@@ -5,16 +5,11 @@ void main() {
 
   String? nama = stdin.readLineSync();
 
-  stdout.write('Masukkan umur: ');
-  String? umurString = stdin.readLineSync();
+  stdout.write('Masukkan jurusan: ');
+  String? jurusan = stdin.readLineSync();
 
-  int? umur;
-  if (umurString != null) {
-    umur = int.tryParse(umurString);
-  }
-
-  if (nama != null && umur != null) {
-    print('Anda memasukkan: $nama dengan umur $umur tahun.');
+  if (nama != null && jurusan != null) {
+    print('Anda memasukkan: $nama dengan jurusan $jurusan .');
   } else {
     print('Tidak ada input yang dimasukkan atau input umur tidak valid.');
   }
