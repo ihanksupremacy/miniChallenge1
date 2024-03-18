@@ -28,13 +28,15 @@ void main() {
   switch (option) {
     case 1:
       print(
-          '$temperature Fahrenheit = ${fahrenheitToCelsius(temperature)} Celsius');
+          '$temperature Fahrenheit = ${fahrenheitToCelsius(temperature).toStringAsFixed(2)} Celsius');
       break;
     case 2:
-      print('$temperature Reamur = ${reamurToCelsius(temperature)} Celsius');
+      print(
+          '$temperature Reamur = ${reamurToCelsius(temperature).toStringAsFixed(2)} Celsius');
       break;
     case 3:
-      print('$temperature Kelvin = ${kelvinToCelsius(temperature)} Celsius');
+      print(
+          '$temperature Kelvin = ${kelvinToCelsius(temperature).toStringAsFixed(2)} Celsius');
       break;
     default:
       print("GAADA PILIHANNYA BOS");
